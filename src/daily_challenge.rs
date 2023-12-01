@@ -37,9 +37,9 @@ pub trait DailyChallenge: Default {
 }
 
 impl PartResult {
-    pub fn new<'a>(value: impl Into<String>) -> Self {
+    pub fn new<'a>(value: impl ToString) -> Self {
         PartResult {
-            result: value.into(),
+            result: value.to_string(),
         }
     }
 }

@@ -21,8 +21,8 @@ pub fn test_day<T: DailyChallenge>() {
     let data_part_one: &str = &T::get_input_data(Part::One, true);
     let data_part_two: &str = &T::get_input_data(Part::Two, true);
 
-    T::solve_part_one(data_part_one);
-    T::solve_part_one(data_part_two);
+    println!("> Part 1: {}", T::solve_part_one(data_part_one));
+    println!("> Part 2: {}", T::solve_part_two(data_part_two));
 }
 
 fn main() {
