@@ -13,11 +13,11 @@ impl DailyChallenge for DayOne {
         1
     }
 
-    fn solve_day_one() -> PartResult {
-        todo!();
+    fn solve_part_one(input: &str) -> PartResult {
+        todo!()
     }
 
-    fn solve_day_two() -> PartResult {
-        todo!();
+    fn solve_part_two(input: &str) -> PartResult {
+        todo!()
     }
 }
