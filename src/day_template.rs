@@ -1,4 +1,4 @@
-use crate::daily_challenge::DailyChallenge;
+use crate::{daily_challenge::DailyChallenge, PartResult};
 
 pub struct DayX;
 
@@ -10,14 +10,14 @@ impl Default for DayX {
 
 impl DailyChallenge for DayX {
     fn get_day_number() -> usize {
-        0
+        2
     }
 
-    fn solve_day_one() -> Result<String, String> {
-        todo!();
+    fn solve_part_one(input: &str) -> PartResult {
+        PartResult::new(0)
     }
 
-    fn solve_day_two() -> Result<String, String> {
-        todo!();
+    fn solve_part_two(input: &str) -> PartResult {
+        PartResult::new(0)
     }
 }
