@@ -10,6 +10,9 @@ pub mod challenges {
 
     pub mod day3;
     pub use day3::*;
+
+    pub mod day4;
+    pub use day4::*;
 }
 pub use challenges::*;
 
@@ -35,6 +38,7 @@ fn main() {
     solve_day::<Day1>();
     solve_day::<Day2>();
     solve_day::<Day3>();
+    solve_day::<Day4>();
 }
 
 pub mod tests {
@@ -57,5 +61,11 @@ pub mod tests {
     fn test_day3() {
         test_day::<Day3>();
         solve_day::<Day3>();
+    }
+
+    #[test]
+    fn test_day4() {
+        test_day::<Day4>();
+        solve_day::<Day4>();
     }
 }
