@@ -1,12 +1,7 @@
 use crate::{daily_challenge::DailyChallenge, PartResult};
 
+#[derive(Default)]
 pub struct Day1;
-
-impl Default for Day1 {
-    fn default() -> Self {
-        Self {}
-    }
-}
 
 impl DailyChallenge for Day1 {
     fn get_day_number() -> usize {

@@ -1,12 +1,7 @@
 use crate::{daily_challenge::DailyChallenge, PartResult};
 
+#[derive(Default)]
 pub struct Day2;
-
-impl Default for Day2 {
-    fn default() -> Self {
-        Self {}
-    }
-}
 
 struct Game {
     id: usize,

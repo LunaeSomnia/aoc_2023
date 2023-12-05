@@ -7,6 +7,9 @@ pub mod challenges {
 
     pub mod day2;
     pub use day2::*;
+
+    pub mod day3;
+    pub use day3::*;
 }
 pub use challenges::*;
 
@@ -31,6 +34,7 @@ pub fn test_day<T: DailyChallenge>() {
 fn main() {
     solve_day::<Day1>();
     solve_day::<Day2>();
+    solve_day::<Day3>();
 }
 
 pub mod tests {
@@ -40,10 +44,18 @@ pub mod tests {
     #[test]
     fn test_day1() {
         test_day::<Day1>();
+        solve_day::<Day1>();
     }
 
     #[test]
     fn test_day2() {
         test_day::<Day2>();
+        solve_day::<Day2>();
+    }
+
+    #[test]
+    fn test_day3() {
+        test_day::<Day3>();
+        solve_day::<Day3>();
     }
 }
